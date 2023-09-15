@@ -1,0 +1,56 @@
+﻿query GetSystems {
+    systems{
+      handlerId
+      entity {
+        id
+        entityIdentifier
+        entityType
+        entityName
+      }
+      handlerType
+      ipAddress
+      hostName
+      machineFactory
+    }
+}
+
+query GetSystem($id: Int!) { 
+    system (databaseId: $id) {
+        handlerId
+        programmers {
+            programmerId
+            entity {
+                id
+                entityIdentifier
+                entityType
+                entityName
+            }
+            adapters {
+                adapterKey
+                entity {
+                    id
+                    entityIdentifier
+                    entityType
+                    entityName
+                }
+                adapterId
+            }
+            ipAddress
+            programmerType
+        }
+        entity {
+            id
+            entityIdentifier
+            entityType
+            entityName
+        }
+        handlerType
+        ipAddress
+        hostName
+        machineFactory
+    }
+}
+
+query GetSystemTypes{
+    systemTypes
+}

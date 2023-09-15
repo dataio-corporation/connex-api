@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataIO.ConneX.Api.GraphQL", "DataIO.ConneX.Api.GraphQL\DataIO.ConneX.Api.GraphQL.csproj", "{D9822763-E44A-4EDE-BFA1-8F06F34D69B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{6A4D0F91-16D4-4ECB-9297-D8E0A3474570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConneXSampleGraphQl", "samples\ConneXSampleGraphQl\ConneXSampleGraphQl.csproj", "{C309C584-882D-4A8C-8BC7-DDAD6F2519C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9822763-E44A-4EDE-BFA1-8F06F34D69B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9822763-E44A-4EDE-BFA1-8F06F34D69B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9822763-E44A-4EDE-BFA1-8F06F34D69B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9822763-E44A-4EDE-BFA1-8F06F34D69B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C309C584-882D-4A8C-8BC7-DDAD6F2519C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C309C584-882D-4A8C-8BC7-DDAD6F2519C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C309C584-882D-4A8C-8BC7-DDAD6F2519C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C309C584-882D-4A8C-8BC7-DDAD6F2519C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C309C584-882D-4A8C-8BC7-DDAD6F2519C8} = {6A4D0F91-16D4-4ECB-9297-D8E0A3474570}
+	EndGlobalSection
+EndGlobal

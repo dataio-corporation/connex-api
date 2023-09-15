@@ -1,0 +1,18 @@
+﻿query GetAdapters {
+    adapters {
+        adapterId
+    }
+}
+
+query GetAdapterMetrics ($adapterIdentifier: String, $interval: String, $timeBucket: String) {
+    adapterMetrics(adapterIdentifier: $adapterIdentifier
+        interval: $interval
+        timeBucket: $timeBucket)
+    {
+        timeStamp
+        blankCheckDuration
+        eraseDuration
+        programmingDuration
+        verifyDuration
+    }
+}

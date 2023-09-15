@@ -1,0 +1,9 @@
+﻿query GetLicense {
+    license {
+        licenseType
+        maxConnections
+        availableConnections
+        conneXAnnualMaintenanceContract
+        timedLicenseExpiration
+    }
+}

@@ -1,0 +1,11 @@
+﻿query GetEntities{
+    entities {
+        entityIdentifier
+        entityType
+        entityName
+    }
+}
+
+query GetEntityTypes{
+    entityTypes
+}
