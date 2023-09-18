@@ -1,0 +1,23 @@
+﻿query GetMessage {
+    message
+    {
+        topic
+        timestamp
+    }
+}
+
+query GetMessages($take: Int!, $skip: Int!, $where: MessageModelFilterInput, $order: [MessageModelSortInput!]) {
+    messages (take: $take
+              skip: $skip
+              where: $where
+              order: $order) {
+        totalCount
+        items {
+            topic
+            contentType
+            timestamp
+            messageModelId
+            payloadAsString
+        }
+    }
+}
