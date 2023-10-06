@@ -18,7 +18,7 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// Gets or sets the version of the installed CH700 software
         /// </summary>
         /// <remarks>Will not be populated if the <see cref="Ah700Version"/> property is set</remarks>
-        [JsonPropertyName("AH700Version")]
+        [JsonPropertyName("CH700Version")]
         public string Ch700Version { get; set; }
         
         /// <summary>

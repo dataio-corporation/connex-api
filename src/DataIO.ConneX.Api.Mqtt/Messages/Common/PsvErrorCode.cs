@@ -6,9 +6,29 @@
     public enum PsvErrorCode
     {
         /// <summary>
+        /// Location holds a device being tested
+        /// </summary>
+        DeviceUnderTest = 1,
+        
+        /// <summary>
+        /// Location holds a good and passed device
+        /// </summary>
+        DevicePassed = 2,
+
+        /// <summary>
         /// Device programming error
         /// </summary>
         DeviceProgrammingError = 3,
+        
+        /// <summary>
+        /// Location holds a device not yet programmed
+        /// </summary>
+        DeviceNotYetProgrammed = 5,
+        
+        /// <summary>
+        /// Location holds a device being programmed
+        /// </summary>
+        DeviceProgramming = 6,
         
         /// <summary>
         /// Socket might be missing at this location
@@ -21,6 +41,11 @@
         SocketErrorThresholdExceeded = 9,
         
         /// <summary>
+        /// Socket intentionally not loaded
+        /// </summary>
+        SocketNotLoaded = 10,
+        
+        /// <summary>
         /// Unknown error occurred
         /// </summary>
         UnknownError = 11,
@@ -29,6 +54,11 @@
         ///	Recurrent Empty Socket Test (REST) error; the device is not programmed
         /// </summary>
         RestError = 12,
+        
+        /// <summary>
+        /// Device laser marking occurred
+        /// </summary>
+        DeviceLaserMarked = 14,
         
         /// <summary>
         /// Device laser marking error
@@ -49,6 +79,11 @@
         /// 3D error before programming
         /// </summary>
         PreProgramming3DError = 21,
+        
+        /// <summary>
+        /// Empty Socket Test (EST) is running
+        /// </summary>
+        RunningEst = 22,
         
         /// <summary>
         /// Wrong adapter
