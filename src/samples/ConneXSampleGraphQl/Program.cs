@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
 
 /*
- * Default connection URI is "http://connexion.dataio.internal:5001/graphql"
+ * Default connection URI is "http://localhost:5001/graphql"
  * If using an external instance of ConneX, use the replace the Uri with your server:
  *      client => client.BaseAddress = new Uri("http(s)://YOURSERVER/graphql"));
  */
