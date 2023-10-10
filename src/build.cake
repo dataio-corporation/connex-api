@@ -32,7 +32,7 @@ var buildHelpTask = Task("BuildHelp")
        System.IO.Directory.CreateDirectory(helpOutputFolder);
     }
 
-    StartProcess("docfx", $"build {System.IO.Path.Combine(helpLocation, "docfx.json")} -o {helpOutputFolder}");
+    StartProcess("dotnet", $"docfx build {System.IO.Path.Combine(helpLocation, "docfx.json")} -o {helpOutputFolder}");
   });
 
 var buildTask = Task("Build")
