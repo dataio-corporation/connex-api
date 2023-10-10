@@ -1,14 +1,8 @@
 # Stop script execution if any command fails
 $ErrorActionPreference = "Stop"
 
-Write-Output "Restoring NuGet packages..."
-dotnet restore
+Write-Output "Restoring dotnet tools..."
+dotnet tool restore
 
-Write-Output "Building the solution..."
-dotnet build --configuration Release
-
-Write-Output "Running tests..."
-dotnet test --configuration Release --no-build
-
-# Write-Output "Build completed successfully."
-
+Write-Output "Running Cake script..."
+dotnet cake

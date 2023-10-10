@@ -26,7 +26,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(CONNEX_REVISION_NUMBER)' == '' ">
-		<Version>$(Major).$(Minor).$(Build)-local</Version>
+		<Version>$(Major).$(Minor).$(Build)</Version>
 		<AssemblyVersion>$(Major).$(Minor).$(Build).$(Revision)</AssemblyVersion>
 	</PropertyGroup>
 	
@@ -45,5 +45,7 @@
     	<CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)\ConneX.ruleset</CodeAnalysisRuleSet>
     	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) - Data I/O</Copyright>
+		<Authors>Data I/O Corporation</Authors>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   	</PropertyGroup>
 </Project>
