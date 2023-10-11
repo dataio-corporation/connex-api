@@ -71,6 +71,6 @@ var nugetPack = Task("NugetPack")
 
   // Set default task to run
 Task("Default")
-  .IsDependentOn(buildTask);
+  .IsDependentOn(nugetPack);
 
 RunTarget(target);

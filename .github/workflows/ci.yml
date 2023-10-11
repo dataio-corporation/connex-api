@@ -25,3 +25,8 @@ jobs:
     - name: Build and Test
       run: ./build.ps1
       shell: pwsh
+    - name: Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: src/artifacts/**/*.nupkg
