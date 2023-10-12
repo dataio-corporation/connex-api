@@ -1,44 +1,13 @@
 <Project>
 	<PropertyGroup>
-		<Major>3</Major>
-		<Minor>0</Minor>
-		<Build>5</Build>
-		<Revision>0</Revision>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(CONNEX_MAJOR_NUMBER)' != '' ">
-		<Major>$(CONNEX_MAJOR_NUMBER)</Major>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(CONNEX_MINOR_NUMBER)' != '' ">
-		<Minor>$(CONNEX_MINOR_NUMBER)</Minor>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(CONNEX_BUILD_NUMBER)' != '' ">
-		<Build>$(CONNEX_BUILD_NUMBER)</Build>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(CONNEX_REVISION_NUMBER)' != '' ">
-		<Revision>$(CONNEX_REVISION_NUMBER)</Revision>
-		<Version>$(Major).$(Minor).$(Build).$(Revision)</Version>
-		<AssemblyVersion>$(Major).$(Minor).$(Build).$(Revision)</AssemblyVersion>
-		<InformationalVersion>$(EXTENDED_VERSION)</InformationalVersion>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(CONNEX_REVISION_NUMBER)' == '' ">
-		<Version>$(Major).$(Minor).$(Build)</Version>
-		<AssemblyVersion>$(Major).$(Minor).$(Build).$(Revision)</AssemblyVersion>
-	</PropertyGroup>
-	
-	<PropertyGroup>
 		<Authors>Data I/O</Authors>
 		<Company>Data I/O</Company>
 		<Product>ConneX</Product>
 	</PropertyGroup>
 
-	<!-- StyleCop Analyzers configuration -->
 	<ItemGroup>
 		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="all" />
+		<PackageReference Include="MinVer" Version="4.3.0" PrivateAssets="All" />
 	</ItemGroup>
 
 	<PropertyGroup>
@@ -47,5 +16,8 @@
 		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) - Data I/O</Copyright>
 		<Authors>Data I/O Corporation</Authors>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/dataio-corporation/connex-api</RepositoryUrl>
+		<MinVerTagPrefix>v</MinVerTagPrefix>
+		<MinVerDefaultPreReleaseIdentifiers>preview</MinVerDefaultPreReleaseIdentifiers>
   	</PropertyGroup>
 </Project>
