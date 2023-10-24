@@ -17,14 +17,36 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// A string representing the result of the device inspection
         /// </summary>
         /// <remarks>
-        /// <para>Possible values:</para>
-        /// <para>201:     3D inspection failure.</para>
-        /// <para>901:     2D inspection failure, unexpected device in pocket</para>
-        /// <para>902:     2D inspection failure, device not detected</para>
-        /// <para>903:     2D inspection failure, device detected but failed inspection</para>
-        /// <para>904:     2D inspection timeout failure</para>
-        /// <para>PASS 2D: Device passed 2D inspection</para>
-        /// <para>PASS 3D: Device passed 3D inspection</para>
+        /// <list type="definition">
+        ///     <item>
+        ///         <term>201</term>
+        ///         <description>3D inspection failure.</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>901</term>
+        ///         <description>2D inspection failure, unexpected device in pocket</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>902</term>
+        ///         <description>2D inspection failure, device not detected</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>903</term>
+        ///         <description>2D inspection failure, device detected but failed inspection</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>904</term>
+        ///         <description>2D inspection timeout failure</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>PASS 2D</term>
+        ///         <description>Device passed 2D inspection</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>PASS 3D</term>
+        ///         <description>Device passed 3D inspection</description>
+        ///     </item>
+        /// </list>
         /// </remarks>
         public string InspectionResult { get; set; }
         
