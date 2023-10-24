@@ -18,6 +18,10 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// </summary>
         /// <remarks>
         /// <list type="definition">
+        ///     <listheader>
+        ///         <term>Result Code</term>
+        ///         <description>Description</description>
+        ///     </listheader>
         ///     <item>
         ///         <term>201</term>
         ///         <description>3D inspection failure.</description>
