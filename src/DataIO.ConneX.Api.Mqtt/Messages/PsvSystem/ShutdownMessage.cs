@@ -8,6 +8,6 @@
         /// <summary>
         /// Gets a value indicating whether the object is active. This property is always false
         /// </summary>
-        public bool Active => true;
+        public bool Active => false;
     }
 }

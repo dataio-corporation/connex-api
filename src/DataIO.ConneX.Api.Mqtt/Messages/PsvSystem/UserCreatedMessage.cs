@@ -1,4 +1,6 @@
-﻿namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
+﻿using System.Text.Json.Serialization;
+
+namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
 {
     using Common;
 
@@ -10,6 +12,7 @@
         /// <summary>
         /// Gets or sets the user's <see cref="PsvUserRole"/>
         /// </summary>
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public PsvUserRole Role { get; set; }
 
         /// <summary>

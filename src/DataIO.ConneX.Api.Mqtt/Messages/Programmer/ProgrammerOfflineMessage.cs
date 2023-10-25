@@ -11,7 +11,7 @@
         public string IpAddress { get; set; }
 
         /// <summary>
-        /// Gets or sets the programmer's type
+        /// Gets or sets the type of programmer: <b>LumenX</b> or <b>FlashCore</b>
         /// </summary>
         public string ProgrammerType { get; set; }
     }

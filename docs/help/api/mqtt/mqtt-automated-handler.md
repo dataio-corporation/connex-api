@@ -191,7 +191,7 @@ Level           | Description
 #### Fields
 Name                  | Description
 ----------------------|---------------------------------------------------------------------------------
-`DeviceID` (`ulong`)  | The unique device identification number assigned by xH700 software.
+`DeviceID` (`string`) | The unique device identification number assigned by xH700 software.
 `Location` (`string`) | The [`Location`](#location) from which the device was picked.
 `PickHead` (`uint`)   | The pick head (end effector) used to pick the device.
 `Position` (`uint`)   | The position within the given location.

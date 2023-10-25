@@ -13,7 +13,7 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// Gets or sets the unique device identifier.
         /// </summary>
         [JsonPropertyName("DeviceID")]
-        public ulong DeviceId { get; set; }
+        public string DeviceId { get; set; }
 
         /// <summary>
         /// Gets or sets the location the device was picked from.
@@ -60,8 +60,25 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         public uint Position { get; set; }
 
         /// <summary>
-        /// Gets or sets the <see cref="PsvOperationStatus"/> indicating the result of the pick operation.
+        /// Gets or sets the operation status indicating the result of the pick operation.
         /// </summary>
-        public PsvOperationStatus Status { get; set; }
+        /// <remarks>
+        /// <para>The following are the possible Status values:</para>
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Value</term>
+        ///         <description>Description</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term>Fail</term>
+        ///         <description>Operation was unsuccessful</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>Pass</term>
+        ///         <description>Operation was successful</description>
+        ///     </item>
+        /// </list>
+        /// </remarks>
+        public string Status { get; set; }
     }
 }

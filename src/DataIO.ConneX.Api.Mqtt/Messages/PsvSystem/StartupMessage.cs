@@ -13,8 +13,37 @@
         public bool Active => true;
 
         /// <summary>
-        /// Gets or sets the <see cref="PsvMachineType"/> representing the type of machine that is running
+        /// Gets or sets the machine type representing the type of machine that is running
         /// </summary>
-        public PsvMachineType MachineType { get; set; }
+        /// <remarks>
+        /// <para>The following are the possible Machine Type values:</para>
+        /// <list type="table">
+        ///     <listheader>
+        ///         <term>Value</term>
+        ///         <description>Description</description>
+        ///     </listheader>
+        ///     <item>
+        ///         <term>Desktop Mode</term>
+        ///         <description>System is running in desktop mode</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>PSV3000</term>
+        ///         <description>System is a PSV3000 machine</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>PSV3500</term>
+        ///         <description>System is a PSV3500 machine</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>PSV5000</term>
+        ///         <description>System is a PSV5000 machine</description>
+        ///     </item>
+        ///     <item>
+        ///         <term>PSV7000</term>
+        ///         <description>System is a PSV7000 machine</description>
+        ///     </item>
+        /// </list>
+        /// </remarks>
+        public string MachineType { get; set; }
     }
 }
