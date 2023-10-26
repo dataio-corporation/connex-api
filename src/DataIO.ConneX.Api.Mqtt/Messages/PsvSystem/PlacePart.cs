@@ -3,25 +3,35 @@
 namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
 {
     using Common;
-    
+
     /// <summary>
-    /// Class representing a Device Complete MQTT message
+    /// Class representing a Place Part MQTT message
     /// </summary>
-    public class DeviceCompleteMessage
+    public class PlacePart
     {
         /// <summary>
-        /// Gets or sets the identification number assigned by the handling system
+        /// Gets or sets the unique device identifier
         /// </summary>
         [JsonPropertyName("DeviceID")]
         public ulong DeviceId { get; set; }
-        
+
         /// <summary>
-        /// Gets or sets the <see cref="PsvErrorCode"/> or status of the handler
+        /// Gets or sets the location the device was placed at
         /// </summary>
-        public PsvErrorCode ErrorCode  { get; set; }
-        
+        public string Location { get; set; }
+
         /// <summary>
-        /// Gets or sets the operation status indicating the state of the device.
+        /// Gets or sets the pick head end effector used to pick the device
+        /// </summary>
+        public uint PickHead { get; set; }
+
+        /// <summary>
+        /// Gets or sets the position within the given location
+        /// </summary>
+        public uint Position { get; set; }
+
+        /// <summary>
+        /// Gets or sets the operation status indicating the result of the place operation
         /// </summary>
         /// <remarks>
         /// <para>The following are the possible Status values:</para>
@@ -40,6 +50,6 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         ///     </item>
         /// </list>
         /// </remarks>
-        public string Status  { get; set; }
+        public string Status { get; set; }
     }
 }
