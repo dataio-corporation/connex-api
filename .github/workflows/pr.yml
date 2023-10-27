@@ -1,9 +1,9 @@
-name: CI
+name: Pull Request
 
 on:
-  push:
+  pull_request:
     branches:
-    - main
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,9 +27,3 @@ jobs:
       with:
         name: artifacts
         path: src/artifacts/**/*.nupkg
-    - name: Push to Nuget
-      env:
-        NUGET_URL: https://api.nuget.org/v3/index.json
-        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-      run: ./push.ps1
-      shell: pwsh
