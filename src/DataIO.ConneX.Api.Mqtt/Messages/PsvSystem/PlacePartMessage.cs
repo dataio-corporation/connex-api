@@ -7,7 +7,7 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
     /// <summary>
     /// Class representing a Place Part MQTT message
     /// </summary>
-    public class PlacePart
+    public class PlacePartMessage
     {
         /// <summary>
         /// Gets or sets the unique device identifier

@@ -248,10 +248,10 @@ Level           | Description
 `xhsessionid`   | The session ID for the current instance of xH700 software.
 
 #### Fields
-Name                   | Description
------------------------|------------------------------------------------------------------------------------
-`Active` (`bool`)      | Always true.
-`MachineType` (`enum`) | The [`MachineType`](#machinetype) representing the type of machine that is running.
+Name                     | Description
+-------------------------|------------------------------------------------------------------------------------
+`Active` (`bool`)        | Always true.
+`MachineType` (`string`) | The [`MachineType`](#machinetype) representing the type of machine that is running.
 
 #### Special Properties
 * Retained
@@ -489,7 +489,7 @@ Location Type     | Description                              | Example
 
 ## MachineType
 ---
-**Type**: `enum`
+**Type**: `string`
 
 Represents the type of PSV system:
 
