@@ -18,6 +18,11 @@
         /// <summary>
         /// User has supervisor level permissions
         /// </summary>
-        Supervisor
+        Supervisor,
+
+        /// <summary>
+        /// User has technician level permissions
+        /// </summary>
+        Technician
     }
 }
