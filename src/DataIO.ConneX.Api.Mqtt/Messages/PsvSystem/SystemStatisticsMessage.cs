@@ -42,32 +42,32 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// <summary>
         /// Gets or sets the percentage of devices that were picked from the input media and are placed in the output and reject media
         /// </summary>
-        public string HandlerYield { get; set; }
+        public string HandlerYield { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the job assistance time
         /// </summary>
-        public string JobAssistanceTime { get; set; }
+        public string JobAssistanceTime { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the estimated job completion time
         /// </summary>
-        public string JobCompletionEstimate { get; set; }
+        public string JobCompletionEstimate { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the job processing time
         /// </summary>
-        public string JobProcessingTime { get; set; }
+        public string JobProcessingTime { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the percentage of devices that passed programming
         /// </summary>
-        public string ProgrammerYield { get; set; }
+        public string ProgrammerYield { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the percentage of devices that were picked from the input media and are placed in the output media
         /// </summary>
-        public string SystemYield { get; set; }
+        public string SystemYield { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the number of devices that failed in the job session

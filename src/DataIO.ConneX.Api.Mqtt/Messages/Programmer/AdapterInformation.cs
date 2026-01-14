@@ -10,12 +10,12 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.Programmer
         /// <summary>
         /// Gets or sets the adapter's unique serial number
         /// </summary>
-        public string SerialNumber { get; set; }
+        public string SerialNumber { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the adapter's identifier (e.g. 110008)
         /// </summary>
-        public string AdapterId { get; set; }
+        public string AdapterId { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the adapter's index position
@@ -25,6 +25,6 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.Programmer
         /// <summary>
         /// Gets or sets the socket information for the adapter
         /// </summary>
-        public List<SocketInfo> SocketInformation { get; set; }
+        public List<SocketInfo> SocketInformation { get; set; } = new List<SocketInfo>();
     }
 }

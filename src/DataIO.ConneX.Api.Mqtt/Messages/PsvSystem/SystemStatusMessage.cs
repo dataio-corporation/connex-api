@@ -10,7 +10,7 @@
         /// <summary>
         /// Gets or sets the <see cref="ErrorMessage"/>ErrorMessage of the handler
         /// </summary>
-        public ErrorMessage ErrorMessage { get; set; }
+        public ErrorMessage? ErrorMessage { get; set; }
 
         /// <summary>
         /// Gets or sets the <see cref="PsvRunState"/> of the handler

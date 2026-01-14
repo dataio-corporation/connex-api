@@ -47,81 +47,81 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// <summary>
         /// Gets or sets the ending serial number for the job session
         /// </summary>
-        public string EndingSerialNumber { get; set; }
-        
+        public string? EndingSerialNumber { get; set; }
+
         /// <summary>
         /// Gets or sets the number of devices that failed in the job session
         /// </summary>
         public ulong FailQuantity { get; set; }
-        
+
         /// <summary>
-        /// Gets or sets whether the programmers are ignored. True if programmers are ignored, otherwise False
+        /// Gets or sets whether the programmers are ignored
         /// </summary>
-        public string IgnoreProgrammers { get; set; }
-        
+        public bool IgnoreProgrammers { get; set; }
+
         /// <summary>
         /// Gets or sets the input location media type
         /// </summary>
-        public string InputMedia { get; set; }
-        
+        public string InputMedia { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the job assistance time
         /// </summary>
-        public string JobAssistanceTime { get; set; }
-        
+        public string JobAssistanceTime { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the job processing time
         /// </summary>
-        public string JobProcessingTime { get; set; }
-        
+        public string JobProcessingTime { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the job throughput of the job session
         /// </summary>
         public ulong JobThroughput { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the nominal throughput of the job session
         /// </summary>
         public double NominalThroughput { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the output location media type
         /// </summary>
-        public string OutputMedia { get; set; }
-        
+        public string OutputMedia { get; set; } = string.Empty;
+
         /// <summary>
         /// Gets or sets the number of devices that passed in the job session
         /// </summary>
         public ulong PassQuantity { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the Reject1 location media type
         /// </summary>
-        public string Reject1 { get; set; }
-        
+        public string? Reject1 { get; set; }
+
         /// <summary>
         /// Gets or sets the Reject2 location media type
         /// </summary>
-        public string Reject2 { get; set; }
-        
+        public string? Reject2 { get; set; }
+
         /// <summary>
         /// Gets or sets the number of devices using serialization that failed
         /// </summary>
-        public string SerialFailReport { get; set; }
-        
+        public string? SerialFailReport { get; set; }
+
         /// <summary>
         /// Gets or sets the number of devices using serialization that passed
         /// </summary>
-        public string SerialPassReport { get; set; }
-        
+        public string? SerialPassReport { get; set; }
+
         /// <summary>
         /// Gets or sets the starting serial number for the job session
         /// </summary>
-        public string StartingSerialNumber { get; set; }
-        
+        public string? StartingSerialNumber { get; set; }
+
         /// <summary>
         /// Gets or sets the reason as to why the job session ended
         /// </summary>
-        public string TerminationReason { get; set; }
+        public string TerminationReason { get; set; } = string.Empty;
     }
 }

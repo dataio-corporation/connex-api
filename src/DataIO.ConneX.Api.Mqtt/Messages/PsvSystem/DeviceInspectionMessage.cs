@@ -52,7 +52,7 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         ///     </item>
         /// </list>
         /// </remarks>
-        public string InspectionResult { get; set; }
+        public string InspectionResult { get; set; } = string.Empty;
         
         /// <summary>
         /// The pick head end effector

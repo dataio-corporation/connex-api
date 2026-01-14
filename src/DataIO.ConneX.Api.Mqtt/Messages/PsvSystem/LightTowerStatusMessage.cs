@@ -57,8 +57,8 @@
         ///     </item>
         /// </list>
         /// </remarks>
-        public string NewState { get; set; }
-        
+        public string NewState { get; set; } = string.Empty;
+
         /// <summary>
         /// The old light tower state
         /// </summary>
@@ -111,6 +111,6 @@
         ///     </item>
         /// </list>
         /// </remarks>
-        public string OldState { get; set; }
+        public string OldState { get; set; } = string.Empty;
     }
 }

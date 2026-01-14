@@ -13,7 +13,7 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// Gets or sets the unique device identifier.
         /// </summary>
         [JsonPropertyName("DeviceID")]
-        public string DeviceId { get; set; }
+        public string DeviceId { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the location the device was picked from.
@@ -47,7 +47,7 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// </list>
         /// </remarks>
         /// </summary>
-        public string Location { get; set; }
+        public string Location { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the pick head end effector used to pick the device.
@@ -62,23 +62,7 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// <summary>
         /// Gets or sets the operation status indicating the result of the pick operation.
         /// </summary>
-        /// <remarks>
-        /// <para>The following are the possible Status values:</para>
-        /// <list type="table">
-        ///     <listheader>
-        ///         <term>Value</term>
-        ///         <description>Description</description>
-        ///     </listheader>
-        ///     <item>
-        ///         <term>Fail</term>
-        ///         <description>Operation was unsuccessful</description>
-        ///     </item>
-        ///     <item>
-        ///         <term>Pass</term>
-        ///         <description>Operation was successful</description>
-        ///     </item>
-        /// </list>
-        /// </remarks>
-        public string Status { get; set; }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public OperationStatus Status { get; set; }
     }
 }

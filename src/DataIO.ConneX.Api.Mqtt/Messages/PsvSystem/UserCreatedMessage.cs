@@ -18,6 +18,6 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.PsvSystem
         /// <summary>
         /// Gets or sets the username of the newly created user
         /// </summary>
-        public string Username { get; set; }
+        public string Username { get; set; } = string.Empty;
     }
 }

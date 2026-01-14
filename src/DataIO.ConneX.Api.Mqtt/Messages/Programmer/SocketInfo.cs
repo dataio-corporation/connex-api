@@ -8,7 +8,7 @@
         /// <summary>
         /// Gets or sets the adapter's clean count
         /// </summary>
-        public string CleanCount { get; set; }
+        public string CleanCount { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the adapter's lifetime actuation count

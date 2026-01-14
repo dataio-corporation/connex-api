@@ -10,26 +10,26 @@ namespace DataIO.ConneX.Api.Mqtt.Messages.Programmer
         /// <summary>
         /// Gets or sets the adapters that are inserted in the programmer
         /// </summary>
-        public List<AdapterInformation> Adapters { get; set; }
+        public List<AdapterInformation> Adapters { get; set; } = new List<AdapterInformation>();
 
         /// <summary>
         /// Gets or sets the additional information for the programmer
         /// </summary>
-        public Dictionary<string, string> AdditionalInformation { get; set; }
+        public Dictionary<string, string> AdditionalInformation { get; set; } = new Dictionary<string, string>();
 
         /// <summary>
         /// Gets or sets the programmer's IP address
         /// </summary>
-        public string IpAddress { get; set; }
+        public string IpAddress { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the type of programmer: <b>LumenX</b> or <b>FlashCore</b>
         /// </summary>
-        public string ProgrammerType { get; set; }
+        public string ProgrammerType { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the version information for the different programmer components
         /// </summary>
-        public List<ProgrammerVersionInformation> VersionInformation { get; set; }
+        public List<ProgrammerVersionInformation> VersionInformation { get; set; } = new List<ProgrammerVersionInformation>();
     }
 }

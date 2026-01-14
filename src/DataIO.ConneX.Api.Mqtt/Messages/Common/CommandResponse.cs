@@ -8,12 +8,12 @@
         /// <summary>
         /// Gets or sets the command topic that was sent
         /// </summary>
-        public string CommandTopic { get; set; }
+        public string CommandTopic { get; set; } = string.Empty;
 
         /// <summary>
         /// If not successful, gets or sets the accompanying error message
         /// </summary>
-        public ErrorMessage ErrorMessage { get; set; }
+        public ErrorMessage? ErrorMessage { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether the command was successful or not

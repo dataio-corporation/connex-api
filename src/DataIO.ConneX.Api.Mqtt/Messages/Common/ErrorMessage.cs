@@ -8,7 +8,7 @@
         /// <summary>
         /// Gets or sets the error code (if provided)
         /// </summary>
-        public string ErrorCode { get; set; }
+        public string? ErrorCode { get; set; }
 
         /// <summary>
         /// Gets or sets the error level
@@ -18,6 +18,6 @@
         /// <summary>
         /// Gets or sets the error message
         /// </summary>
-        public string Message { get; set; }
+        public string Message { get; set; } = string.Empty;
     }
 }

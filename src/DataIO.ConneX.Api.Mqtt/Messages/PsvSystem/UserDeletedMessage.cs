@@ -8,6 +8,6 @@
         /// <summary>
         /// Gets or sets the username of the deleted user
         /// </summary>
-        public string Username { get; set; }
+        public string Username { get; set; } = string.Empty;
     }
 }

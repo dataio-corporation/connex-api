@@ -44,6 +44,6 @@
         ///     </item>
         /// </list>
         /// </remarks>
-        public string MachineType { get; set; }
+        public string MachineType { get; set; } = string.Empty;
     }
 }

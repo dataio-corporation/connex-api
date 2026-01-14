@@ -8,11 +8,11 @@
         /// <summary>
         /// Gets or sets the name of the component
         /// </summary>
-        public string VersionName { get; set; }
+        public string VersionName { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the programmer's version
         /// </summary>
-        public string Version { get; set; }
+        public string Version { get; set; } = string.Empty;
     }
 }

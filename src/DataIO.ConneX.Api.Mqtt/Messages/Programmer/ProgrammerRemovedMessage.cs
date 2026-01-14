@@ -8,26 +8,26 @@
         /// <summary>
         /// Gets or sets the unique ID of the system handler that the programmer disconnected from
         /// </summary>
-        public string HandlerIdentifier { get; set; }
+        public string HandlerIdentifier { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the programmer's IP address
         /// </summary>
-        public string IpAddress { get; set; }
+        public string IpAddress { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the unique ID of the specific programmer that disconnected from the system
         /// </summary>
-        public string ProgrammerIdentifier { get; set; }
+        public string ProgrammerIdentifier { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the name of the programmer that disconnected from the system
         /// </summary>
-        public string ProgrammerName { get; set; }
+        public string ProgrammerName { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the type of programmer that disconnected from the system: LumenX or FlashCore
         /// </summary>
-        public string ProgrammerType { get; set; }
+        public string ProgrammerType { get; set; } = string.Empty;
     }
 }

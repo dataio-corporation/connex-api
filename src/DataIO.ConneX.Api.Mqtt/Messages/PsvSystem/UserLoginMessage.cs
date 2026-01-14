@@ -13,6 +13,6 @@
         /// <summary>
         /// Gets or sets the username of the user who logged in
         /// </summary>
-        public string Username { get; set; }
+        public string Username { get; set; } = string.Empty;
     }
 }

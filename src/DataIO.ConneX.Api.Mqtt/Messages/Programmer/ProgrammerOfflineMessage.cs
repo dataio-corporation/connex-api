@@ -8,11 +8,11 @@
         /// <summary>
         /// Gets or sets the programmer's IP address
         /// </summary>
-        public string IpAddress { get; set; }
+        public string IpAddress { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the type of programmer: <b>LumenX</b> or <b>FlashCore</b>
         /// </summary>
-        public string ProgrammerType { get; set; }
+        public string ProgrammerType { get; set; } = string.Empty;
     }
 }

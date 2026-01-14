@@ -3,6 +3,8 @@
 		<Authors>Data I/O</Authors>
 		<Company>Data I/O</Company>
 		<Product>ConneX</Product>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>

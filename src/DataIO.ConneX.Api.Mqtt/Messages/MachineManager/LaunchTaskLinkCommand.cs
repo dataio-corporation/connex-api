@@ -14,7 +14,7 @@
         /// <summary>
         /// Gets or sets the name of the Task to be run. The Task must be present in the current Task file
         /// </summary>
-        public string TaskName { get; set; }
+        public string TaskName { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets a value indicating whether TaskLink should be run in Administrator Mode
